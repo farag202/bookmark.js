@@ -1,0 +1,54 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="bookmark.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+
+
+<body>
+    
+    <div class="container py-5">
+
+        <form action="">
+
+            <div class="mb-3">
+                <label for="siteName"> <i class="fa-solid fa-book"></i>    Site Name</label>
+                <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div class="mb-3">
+                <label for="siteUrl"> <i class="fa-solid fa-link"></i>      Site URL</label>
+                <input type="url" id="siteUrl" class="form-control" placeholder="Websit URL">
+            </div>
+
+            <button  onclick="addSubmit()" type="button" class="btn btn-warning">Submit</button>
+        </form>
+
+       <table class="table table-striped text-center">
+        <thead>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="myData">
+          
+        </tbody>
+       </table>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bookmark.js"></script>
+</body>
+</html>
